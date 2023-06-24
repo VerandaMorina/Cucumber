@@ -12,7 +12,9 @@ import org.junit.runner.RunWith;
         glue = "steps",
         dryRun = false,
 
-        tags = "@smoke"
+        tags = "@sprint1",
+        //it is used to print all the steps in console
+        plugin = {"pretty"}
 
 )
 

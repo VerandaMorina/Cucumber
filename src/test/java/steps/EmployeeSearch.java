@@ -45,4 +45,5 @@ public class EmployeeSearch extends CommonMethods {
         WebElement empNameField = driver.findElement(By.id("empsearch_employee_name_empName"));
         empNameField.sendKeys("selab");
     }
+
 }

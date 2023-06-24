@@ -40,4 +40,25 @@ public class LoginSteps extends CommonMethods {
     public void user_is_successfully_logged_in_the_application() {
         System.out.println("My test case is passed");
     }
+    @When("user enters ess username and password")
+    public void user_enters_ess_username_and_password() {
+        WebElement usernameField2= driver.findElement(By.id("txtUsername"));
+        WebElement passwordField2= driver.findElement(By.id("txtPassword"));
+        //entering the credentials
+        usernameField2.sendKeys("dalima123");
+        passwordField2.sendKeys("Hum@nhrm123");
     }
+    @When("user enters invalid username and password")
+    public void user_enters_invalid_username_and_password() {
+        WebElement usernameField3= driver.findElement(By.id("txtUsername"));
+        WebElement passwordField3= driver.findElement(By.id("txtPassword"));
+        //entering the credentials
+        usernameField3.sendKeys("admin123");
+        passwordField3.sendKeys("Hum@nhrm123");
+    }
+
+    @Then("error message is displayed")
+    public void error_message_is_displayed() {
+        System.out.println("error messsage is displayed");
+    }
+}
